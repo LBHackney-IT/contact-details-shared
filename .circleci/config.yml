@@ -34,5 +34,5 @@ jobs:
 workflows:
   nuget-package:
     jobs:
-      - publish-package:
+      - publish-package
           
