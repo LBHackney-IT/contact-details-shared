@@ -36,10 +36,10 @@ jobs:
       - setup_remote_docker
       - run:
           name: build
-          command: docker-compose build hackney-shared-contactdetails-test
+          command: docker-compose build hackney-shared-contact-details-test
       - run:
           name: Run tests
-          command: docker-compose run hackney-shared-contactdetails-test
+          command: docker-compose run hackney-shared-contact-details-test
   publish-package:
     executor: docker-dotnet
     steps:
