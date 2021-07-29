@@ -1,0 +1,9 @@
+version: "3.2"
+
+services:
+
+  hackney-shared-contact-details-test:
+    image: hackney-shared-contact-details-test
+    build:
+      context: .
+      dockerfile: Hackney.Shared.ContactDetails.Tests/Dockerfile

@@ -8,6 +8,9 @@ executors:
   docker-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.1
+  docker-python:
+    docker:
+      - image: circleci/python:3.7
 
 references:
   workspace_root: &workspace_root "~"
@@ -16,6 +19,27 @@ references:
       at: *workspace_root     
 
 jobs:
+  check-code-formatting:
+    executor: docker-dotnet
+    steps:
+      - checkout
+      - run:
+          name: Install dotnet format
+          command: dotnet tool install dotnet-format --tool-path ./dotnet-format-local/
+      - run:
+          name: Run formatter check
+          command: ./dotnet-format-local/dotnet-format --check
+  build-and-test:
+    executor: docker-python
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: build
+          command: docker-compose build hackney-shared-contactdetails-test
+      - run:
+          name: Run tests
+          command: docker-compose run hackney-shared-contactdetails-test
   publish-package:
     executor: docker-dotnet
     steps:
@@ -32,7 +56,14 @@ jobs:
             cd /root/project/Hackney.Shared.ContactDetails/bin/Release
             dotnet nuget push Hackney.Shared.ContactDetails.*.nupkg -s https://nuget.pkg.github.com/LBHackney-IT/index.json --api-key ${NUGET_KEY} Hackney.Shared.ContactDetails.*/*.nupkg
 workflows:
-  nuget-package:
+   nuget-package:
     jobs:
-      - publish-package
+      - check-code-formatting
+      - build-and-test
+      - publish-package:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only: release
           

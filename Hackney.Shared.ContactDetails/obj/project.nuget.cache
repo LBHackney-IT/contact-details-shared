@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "kktI2/SyUmUDBv5N+E39AdexZp8TE1cVVUh3S14I0gJRMKilL4/Zsobkui36Tdcnae3w9UHQ3pUAN44Ij8sWzA==",
+  "dgSpecHash": "tzbcmJ3YTykNPm/Uof7+QjqJRKTvgGcBX8owNB8/S/aov8NkZeU7xZCcGD0NA6SMSe1sTG46pa4by7eSAaLu/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\humulla\\Desktop\\nuget-packages\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\humulla\\.nuget\\packages\\awssdk.core\\3.7.0.38\\awssdk.core.3.7.0.38.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.2.7\\awssdk.simplenotificationservice.3.7.2.7.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512",
+    "C:\\Users\\humulla\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }

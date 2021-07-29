@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\humulla\\Desktop\\nuget-packages\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "C:\\Users\\humulla\\Desktop\\nuget-packages\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails.csproj",
         "projectName": "Hackney.Shared.ContactDetails",
@@ -17,7 +17,6 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\humulla\\Desktop\\nuget-packages\\Hackney.Shared.ContactDetails\\Hackney.Shared.ContactDetails\\NuGet.Config",
           "C:\\Users\\humulla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,6 +24,9 @@
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.bintray.com/nuget/gov-uk-notify/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/LBHackney-IT/index.json": {}
         },
         "frameworks": {
@@ -40,6 +42,16 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "dependencies": {
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.2.7, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
