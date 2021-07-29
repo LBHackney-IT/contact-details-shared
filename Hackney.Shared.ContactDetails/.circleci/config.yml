@@ -1,0 +1,38 @@
+version: 2.1
+
+orbs:
+  nuget-cache: guitarrapc/nuget-cache@0.1.1
+  aws-ecr: circleci/aws-ecr@3.0.0
+
+executors:
+  docker-dotnet:
+    docker:
+      - image: mcr.microsoft.com/dotnet/core/sdk:3.1
+
+references:
+  workspace_root: &workspace_root "~"
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root     
+
+jobs:
+  publish-package:
+    executor: docker-dotnet
+    steps:
+      - checkout
+      - *attach_workspace
+      - run:
+          name: Release the Package          
+          command: | 
+            cd ./Hackney.Shared.ContactDetails
+            dotnet pack --configuration Release
+      - run: 
+          name: Publish to GitHub
+          command: |
+            cd /root/project/Hackney.Shared.ContactDetails/bin/Release
+            dotnet nuget push Hackney.Shared.ContactDetails.*.nupkg -s https://nuget.pkg.github.com/LBHackney-IT/index.json --api-key ${NUGET_KEY} Hackney.Shared.ContactDetails.*/*.nupkg
+workflows:
+  nuget-package:
+    jobs:
+      - publish-package:
+          
