@@ -65,5 +65,5 @@ workflows:
             - build-and-test
           filters:
             branches:
-              only: release
+              only: main
           
