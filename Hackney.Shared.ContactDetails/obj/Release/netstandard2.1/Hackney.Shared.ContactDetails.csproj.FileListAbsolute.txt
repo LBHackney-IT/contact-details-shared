@@ -1,9 +1,0 @@
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\bin\Release\netstandard2.1\Hackney.Shared.ContactDetails.deps.json
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\bin\Release\netstandard2.1\Hackney.Shared.ContactDetails.dll
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\bin\Release\netstandard2.1\Hackney.Shared.ContactDetails.pdb
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\obj\Release\netstandard2.1\Hackney.Shared.ContactDetails.csprojAssemblyReference.cache
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\obj\Release\netstandard2.1\Hackney.Shared.ContactDetails.csproj.CoreCompileInputs.cache
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\obj\Release\netstandard2.1\Hackney.Shared.ContactDetails.AssemblyInfoInputs.cache
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\obj\Release\netstandard2.1\Hackney.Shared.ContactDetails.AssemblyInfo.cs
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\obj\Release\netstandard2.1\Hackney.Shared.ContactDetails.dll
-C:\Users\humulla\Desktop\nuget-packages\Hackney.Shared.ContactDetails\Hackney.Shared.ContactDetails\obj\Release\netstandard2.1\Hackney.Shared.ContactDetails.pdb
