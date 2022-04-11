@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Hackney.Shared.ContactDetail</PackageId>
@@ -10,4 +10,9 @@
     <Description>Shared Library for Contact Detail service</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Hackney.Core.DynamoDb" Version="1.51.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Text.Json" Version="6.0.2" />
+  </ItemGroup>
 </Project>
