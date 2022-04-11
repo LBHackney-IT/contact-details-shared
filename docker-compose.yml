@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  hackney-shared-contact-detail-test:
+    image: hackney-shared-contact-detail-test
+    build:
+      context: .
+      dockerfile: Hackney.Shared.ContactDetail.Tests/Dockerfile
+      args:
+        - LBHPACKAGESTOKEN=${LBHPACKAGESTOKEN}
